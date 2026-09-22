@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" group="system" method="upgrade">
-	<name>Personyze for Joomla</name>
+	<name>Personyze Personalization for Joomla</name>
 	<author>Personyze</author>
 	<creationDate>2026-09-22</creationDate>
 	<copyright>(C) Personyze. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>support@personyze.com</authorEmail>
 	<authorUrl>https://www.personyze.com</authorUrl>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>PLG_SYSTEM_PERSONYZE_XML_DESCRIPTION</description>
 	<namespace path="src">Personyze\Plugin\System\Personyze</namespace>
 
