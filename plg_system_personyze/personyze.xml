@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_personyze</name>
+	<author>Personyze</author>
+	<creationDate>2026-09-22</creationDate>
+	<copyright>(C) Personyze. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@personyze.com</authorEmail>
+	<authorUrl>https://www.personyze.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_PERSONYZE_XML_DESCRIPTION</description>
+	<namespace path="src">Personyze\Plugin\System\Personyze</namespace>
+
+	<files>
+		<folder plugin="personyze">services</folder>
+		<folder>src</folder>
+	</files>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Personyze Update Site">https://raw.githubusercontent.com/personyze/personyze-joomla/main/updates.xml</server>
+	</updateservers>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_system_personyze.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_personyze.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="account_id"
+					type="number"
+					label="PLG_SYSTEM_PERSONYZE_ACCOUNT_ID_LABEL"
+					description="PLG_SYSTEM_PERSONYZE_ACCOUNT_ID_DESC"
+					filter="integer"
+					min="0"
+					default=""
+				/>
+				<field
+					name="tracking_domains"
+					type="text"
+					label="PLG_SYSTEM_PERSONYZE_TRACKING_DOMAINS_LABEL"
+					description="PLG_SYSTEM_PERSONYZE_TRACKING_DOMAINS_DESC"
+					default=""
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
